@@ -16,6 +16,12 @@ class Planets(object):
         self.shape = simple_sphere(pos=vector(xo, yo ,0), radius=radius, color=vector(0, 1, 0))
         self.pos = [self.shape.pos.x, self.shape.pos.y]
 
+    def get_x(self):
+        return self.pox[0]
+
+    def get_y(self):
+        return self.pox[1]
+
 
 def create_planet(x, y, vx, vy, m, d):
     V = m/d
